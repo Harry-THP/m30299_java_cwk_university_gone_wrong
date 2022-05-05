@@ -1,0 +1,24 @@
+1,2,3,You wake up at 2pm after a night out. You have a Core Computing lecture starting now.,Throw some on some clothes and go to it.,Forget about it and make breakfast.
+2,4,5,You race downstairs; out of the front door and along the road. You reach a busy road you need to cross.,Run across it.,Go down an alleyway that looks like a shortcut.
+3,6,7,You go to the kitchen and there's no food in the fridge.,Go shopping.,Steal your flatmate's food.
+4,8,9,Lucky miss! You almost got hit by a car; but made it to the lecture theatre! You still managed to miss it though. Your programming lecture is just beginning.,Stay for the next lecture.,Go shopping instead.
+5,10,11,You're attacked from behind. You turn around and see a hoard of zombies!,Scream for help.,Try to fight the zombies.
+6,17,16,You go shopping and buy a variety of different breakfast items before cooking breakfast for yourself and your flatmates. It's now time for your programming lecture.,Go to the lecture.,Blow off another class.
+7,13,12,You begin cooking a full cooked breakfast because you're so hungry after your night out. You hear the phone ring from your bedroom.,Answer it., Ignore it.
+8,23,22,Nadim is about to start the programming lecture when he realises David left his phone behind from the previous one. He trusts you to take it to him.,Return David's phone.,Keep the phone and break into it.
+9,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+10,8,24,Out of the blue; Nadim leaps out from the bushes and fends off the zombies with his trusty hammer.,Go to your next lecture.,Join Nadim fighting zombies.
+11,8,9,The zombies overpower you. They try to eat your flesh but can't stand the taste of it because of your poor quality student diet.,Go to your next lecture.,Go shopping.
+12,6,14,You finish cooking and begin eating. Your flatmate walks in and notices their food is gone.,Apologise and offer to go shopping with them.,Run away.
+13,15,19,Your friend of whom you were with last night calls. They remind you that you have coursework due tomorrow. When you hang up and walk back to the kithcen; everything is on fire - You left your cooking unattended!,Try to put the fire out.,EVACUATE!!
+14,17,16,With breakfast finished; it's now time for your programming lecture.,Go to the lecture.,Blow off another class.
+15,20,21,What do you want to put the fire out with?,EMPTY - TBD,EMPTY - TBD
+16,18,5,You decide to go out and blow all your student loan on fancy clothes. Which way do you walk to the shops?,Go through the town.,Go down an alleyway that looks like a shortcut
+17,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+18,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+19,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+20,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+21,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+22,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+23,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+24,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
