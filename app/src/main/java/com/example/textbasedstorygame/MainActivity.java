@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,7 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         //Create the main page using the activity_main XML markup
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        //Due to Activity progress saving being implemented (explained in a more detailed comment
+        //at the bottom), orientation must be detected and set manually here
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            setContentView(R.layout.activity_main_land);
+        }
+        else {
+            setContentView(R.layout.activity_main);
+        }
 
         //Include a back button in the title bar
         ActionBar actionBar = getSupportActionBar();
@@ -56,7 +65,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Creates an alert box asking the user to confirm ending the game when they hit either of the back buttons
+    //Function which takes the user back to the home screen
+    public void home(){
+        Intent endGame = new Intent(getApplicationContext(), StartScreen.class);
+        startActivity(endGame);
+    }
+
+
+    //Function which triggers the game to restart
+    public void replay(){
+        Intent playAgain = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(playAgain);
+        finish();
+        overridePendingTransition(0, 0);
+    }
+
+
+    //Creates an alert box asking the user to confirm ending the game when they hit either of the
+    //back buttons
     public void quitAlertBox() {
         AlertDialog.Builder quitGame = new AlertDialog.Builder(this);
         quitGame.setTitle("End Game");
@@ -64,8 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
         quitGame.setNegativeButton("Quit", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                Intent endGame = new Intent(getApplicationContext(), StartScreen.class);
-                startActivity(endGame);
+                home();
             }
         });
 
@@ -93,18 +118,53 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //When buttonOne is clicked, get the node id that option one points to, load that Node in as currentNode and display it's contents on the buttons and text field
+    //When buttonOne is clicked, get the node id that option one points to, load that Node in as
+    //currentNode and display it's contents on the buttons and text field.
+    //If it's an end node, this button serves as a replay button and will restart the game
     public void buttonOneClickHandler(View view){
-        nextNodeID = currentNode.getDecisionOneID();
-        currentNode = server.getNode(nextNodeID);
-        currentNode.setNewValues(currentNode, this);
+        if (currentNode.getDecisionOneID() == -1){
+            replay();
+        }
+        else {
+            nextNodeID = currentNode.getDecisionOneID();
+            currentNode = server.getNode(nextNodeID);
+            currentNode.setNewValues(currentNode, this);
+        }
     }
 
 
-    //When buttonTwo is clicked, get the node id that option two points to, load that Node in as currentNode and display it's contents on the buttons and text field
+    //When buttonTwo is clicked, get the node id that option two points to, load that Node in as
+    //currentNode and display it's contents on the buttons and text field.
+    //If it's an end node, this button serves as a home button and will go back to the main screen
     public void buttonTwoClickHandler(View view){
-        nextNodeID = currentNode.getDecisionTwoID();
-        currentNode = server.getNode(nextNodeID);
-        currentNode.setNewValues(currentNode, this);
+        if (currentNode.getDecisionOneID() == -1){
+            home();
+        }
+        else {
+            nextNodeID = currentNode.getDecisionTwoID();
+            currentNode = server.getNode(nextNodeID);
+            currentNode.setNewValues(currentNode, this);
+        }
+    }
+
+    //During testing, when the screen was rotated mid-game, it would go back to the beginning of the
+    //story map. To circumvent this, an extra line has been added to AndroidManifest.xml, although
+    //it stops the landscape version of activity_main.xml from loading. This function handles
+    //rotation manually, loading activity_main_land.xml when the screen is landscape.
+    //Because this is not named uniformly, AndroidStudio doesn't like it; this isn't actually
+    //concerning because rotation for it is handled manually here.
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            setContentView(R.layout.activity_main_land);
+            currentNode.setNewValues(currentNode, this);
+
+        }
+        else {
+            setContentView(R.layout.activity_main);
+            currentNode.setNewValues(currentNode, this);
+        }
     }
 }

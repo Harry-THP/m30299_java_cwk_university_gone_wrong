@@ -6,19 +6,34 @@
 6,17,16,You go shopping and buy a variety of different breakfast items before cooking breakfast for yourself and your flatmates. It's now time for your programming lecture.,Go to the lecture.,Blow off another class.
 7,13,12,You begin cooking a full cooked breakfast because you're so hungry after your night out. You hear the phone ring from your bedroom.,Answer it., Ignore it.
 8,23,22,Nadim is about to start the programming lecture when he realises David left his phone behind from the previous one. He trusts you to take it to him.,Return David's phone.,Keep the phone and break into it.
-9,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+9,18,8,You spend hundreds of pounds on expensive new clothes!,Go for a walk to show everyone how great you look.,Go to your lecture.
 10,8,24,Out of the blue; Nadim leaps out from the bushes and fends off the zombies with his trusty hammer.,Go to your next lecture.,Join Nadim fighting zombies.
 11,8,9,The zombies overpower you. They try to eat your flesh but can't stand the taste of it because of your poor quality student diet.,Go to your next lecture.,Go shopping.
 12,6,14,You finish cooking and begin eating. Your flatmate walks in and notices their food is gone.,Apologise and offer to go shopping with them.,Run away.
-13,15,19,Your friend of whom you were with last night calls. They remind you that you have coursework due tomorrow. When you hang up and walk back to the kithcen; everything is on fire - You left your cooking unattended!,Try to put the fire out.,EVACUATE!!
+13,15,19,Your friend of whom you were with last night calls. They remind you that you have coursework due tomorrow. When you hang up and walk back to the kitchen; everything is on fire - You left your cooking unattended!,Try to put the fire out.,EVACUATE!!
 14,17,16,With breakfast finished; it's now time for your programming lecture.,Go to the lecture.,Blow off another class.
-15,20,21,What do you want to put the fire out with?,EMPTY - TBD,EMPTY - TBD
+15,20,21,What do you want to put the fire out with?,The fire blanket.,A bottle of hand sanitiser.
 16,18,5,You decide to go out and blow all your student loan on fancy clothes. Which way do you walk to the shops?,Go through the town.,Go down an alleyway that looks like a shortcut
-17,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-18,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-19,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-20,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-21,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-22,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-23,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
-24,-1,-1,EMPTY - TBD,EMPTY - TBD,EMPTY - TBD
+17,26,25,You arrive at the lecture theatre but it is full of zombies!,Try to battle the zombies.,Try to teach the zombies programming.
+18,29,30,You run into a friend who you haven't seen for ages! They invite you out with them tonight.,Complete your coursework that's due tomorrow.,Go out with them.
+19,29,28,You run out of your room dash down the stairs and away from the building.,Meet with your friend to do coursework.,Report the fire.
+20,17,16,You successfully put the fire out! After all that commotion it's now time for your programming lecture.,Go to the lecture.,Blow off another class.
+21,19,27,The fire gets worse! Zombies start crashing through the window too!,EVACUATE!!,Push zombies into the fire.
+22,31,33,Upon breaking into David's phone you find out that he's meeting up with his two friends called Paul to play golf and have lunch. This is suspicious... Lecturers don't have personal lives!?,Use the phone to break into the university's systems and change your grades instead.,Investigate!
+23,24,9,You return the phone to David and he is very thankful.,Find Nadim to fight zombies after all!,Go shopping.
+24,34,39,Nadim takes you to his secret hideout where he shows you all of his zombie fighting equipment. He gives you some and then tells you about an anonymous zombie he's been tracking. He's managed to work out that they are meeting with friends at a cafe today. You remember overhearing that David said he was going there.,Follow David to the cafe to determine whether he is the zombie ring leader.,Don't bother going after him because he gave you a good grade in your assignment.
+25,-1,-1,Your lesson angers the zombies! They stamped and trample you to death.,Play Again,Home
+26,24,18,You start to fend off the zombies and are doing pretty well! Out of the blue Nadim leaps out from behind a desk and finishes off the zombies with his hammer.,Join Nadim fighting zombies.,Go for a walk to clear your head.
+27,-1,-1,The zombies burn to death. You're not charged for any damages on the account of zombies existing being hushed up by the police. You're given a brand new flat!,Play Again,Home
+28,-1,-1,Upon phoning 999 the fire brigade come to put the fire out and the police also arrest you for arson!,Play Again,Home
+29,-1,-1,You're a model student! You get your coursework in on time and have a good chance of passing the year!,Play Again,Home
+30,-1,-1,You decide to go out all dressed up in your new clothes and have the time of your life (again)! However you missed the deadline for your coursework and now you don't have enough credits to pass the year.,Play Again,Home
+31,-1,-1,Risky move! You're bold to attempt such a thing. Unfortunately luck doesn't swing your way. You're found out and the university suspends you.,Play Again,Home
+32,-1,-1,In a huge frenzy you run over to their table and start yelling at them asking them what they are plotting. Noticing you have his phone David snatches it back and reports you to the university. You're suspended.,Play Again,Home
+33,34,32,You catch a train up to where David and his friends are meeting. They're at a local cafe eating tapas.,Lay low and listen in on their conversation.,Run over to them and ask them what they're plotting.
+34,36,35,After listening for a while you discover that David is the ring leader of a massive zombie group that are trying to take over the world!,Follow him back to his lair.,Confront him.
+35,-1,-1,As soon as he realises you are onto him David gets the two Pauls to take you away and feed you to the zombies. You die a slow painful death.,Play Again,Home
+36,38,37,Back at David's lair there are all his zombies in a holding pen.,Grab a flame thrower and destroy them all.,Release them all and hope they will attack the masterminds.
+37,-1,-1,You release the zombies. They eat you and then go on to wreak havoc on the rest of the world. David; Paul and Paul achieve world domination and you failed to thwart their plans.,Play Again,Home
+38,-1,-1,You melt all the zombies and burn down David's lair! You're a hero!,Play Again,Home
+39,-1,-1,Over the coming weeks the zombie situation gets worse. Thanks to you David has achieved world domination and his zombies are everywhere.,Play Again,Home

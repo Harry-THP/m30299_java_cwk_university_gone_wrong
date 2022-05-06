@@ -39,7 +39,7 @@ public class StartScreen extends AppCompatActivity {
         startActivity(playGame);
     }
 
-    //When nav bar back button is pressed, show a dialogue asking the user to confirm ending the game
+    //When nav bar back button is pressed, quit the app
     @Override
     public void onBackPressed() {
         this.finishAffinity();

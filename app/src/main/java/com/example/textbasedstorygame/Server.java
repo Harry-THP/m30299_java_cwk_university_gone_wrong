@@ -52,7 +52,8 @@ public class Server {
         return csvFile.hasNext();
     }
 
-    //A private method which is passed a line, splits it up by every ',' and puts the split segments into an Array
+    //A private method which is passed a line, splits it up by every ',' and puts the split segments
+    //into an Array
     private String[] splitLine(String line) {
         return line.split(",");
     }
@@ -66,7 +67,8 @@ public class Server {
         return string;
     }
 
-    //Gets the Node based on the ID passed to it - Array indexing starts at 0, so Node 5, for example, will be index 4; hence the 'nodeID - 1'
+    //Gets the Node based on the ID passed to it - Array indexing starts at 0, so Node 5, for
+    //example, will be index 4; hence the 'nodeID - 1'
     public Node getNode(int nodeID) {
         return (nodes.get(nodeID - 1));
     }

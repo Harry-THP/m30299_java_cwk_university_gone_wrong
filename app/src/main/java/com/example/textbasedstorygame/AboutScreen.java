@@ -41,6 +41,7 @@ public class AboutScreen extends AppCompatActivity {
         return true;
     }
 
+
     //When nav bar back button is pressed, go back to the main menu
     public void onBackPressed() {
         Intent endGame = new Intent(getApplicationContext(), StartScreen.class);
